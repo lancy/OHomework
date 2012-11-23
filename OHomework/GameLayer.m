@@ -9,10 +9,23 @@
 
 #import "GameLayer.h"
 #import "BackgroundLayer.h"
+#import "Player.h"
+#import "Block.h"
+
+@interface GameLayer() {
+    
+}
+
+@property (nonatomic, strong) Player* player;
+@property (nonatomic, strong) CCArray *blockArray;
+@property BOOL isFalling;
+@property CGFloat speed;
+
+@end
 
 @implementation GameLayer
 
-+(CCScene *) scene
++ (CCScene *)scene
 {
 	// 'scene' is an autorelease object.
 	CCScene *scene = [CCScene node];
@@ -28,7 +41,7 @@
 }
 
 // on "init" you need to initialize your instance
--(id) init
+- (id)init
 {
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super's" return value
@@ -36,9 +49,84 @@
 		CCLayer *backgroundLayer = [BackgroundLayer node];
         [self addChild:backgroundLayer];
         
+        
+        self.player = [Player node];
+        [self addChild:self.player];
+        
+        self.blockArray = [CCArray array];        
+        
+        [self setIsFalling:YES];
+        [self setSpeed:0];
+        
+        [self scheduleUpdate];
+        [self setIsTouchEnabled:YES];
 	}
 	return self;
 }
+
+- (void)update:(ccTime)delta
+{
+    [self schedule:@selector(createRandomBlock) interval:3];
+    [self updatePlayerPosition];
+    [self updateBlockPosition];
+}
+
+
+- (void)updateBlockPosition
+{
+    for (Block *block in self.blockArray) {
+        CGPoint position = block.position;
+        position.x -= 1;
+        block.position = position;
+        
+        if (position.x < -50) {
+            [self.blockArray removeObject:block];
+            [block removeFromParentAndCleanup:YES];
+        }
+    }
+}
+
+- (void)updatePlayerPosition
+{
+    CGPoint position = self.player.position;
+    if ([self isFalling]) {
+        self.speed -= 0.05;
+    } else {
+        self.speed += 0.05;
+    }
+    position.y += self.speed;
+    self.player.position = position;
+}
+
+- (void)createRandomBlock
+{
+    Block *block = [Block node];
+    [self.blockArray addObject:block];
+    block.position = [self randomPositionOutsiteWindows];
+    [self addChild:block];
+}
+
+
+- (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self setSpeed:0.1];
+    [self setIsFalling:NO];
+}
+
+- (void)ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self setSpeed:0.1];
+    [self setIsFalling:YES];
+}
+
+
+- (CGPoint)randomPositionOutsiteWindows
+{
+    CGSize winSize = [[CCDirector sharedDirector] winSize];
+    CGPoint position = CGPointMake(winSize.width, CCRANDOM_0_1() * winSize.height);
+    return position;
+}
+
 
 
 @end

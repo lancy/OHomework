@@ -140,6 +140,10 @@
 		BFD1603C165F1FC700FEC366 /* down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD16036165F1FC700FEC366 /* down@2x.png */; };
 		BFD1603D165F1FC700FEC366 /* top.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD16037165F1FC700FEC366 /* top.png */; };
 		BFD1603E165F1FC700FEC366 /* top@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD16038165F1FC700FEC366 /* top@2x.png */; };
+		BFD16049165F290C00FEC366 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD16048165F290C00FEC366 /* Player.m */; };
+		BFD1604F165F2A6100FEC366 /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD1604D165F2A6100FEC366 /* player.png */; };
+		BFD16050165F2A6100FEC366 /* player@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD1604E165F2A6100FEC366 /* player@2x.png */; };
+		BFD16057165F4C0300FEC366 /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD16056165F4C0300FEC366 /* Block.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -413,6 +417,12 @@
 		BFD16036165F1FC700FEC366 /* down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down@2x.png"; sourceTree = "<group>"; };
 		BFD16037165F1FC700FEC366 /* top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top.png; sourceTree = "<group>"; };
 		BFD16038165F1FC700FEC366 /* top@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "top@2x.png"; sourceTree = "<group>"; };
+		BFD16047165F290C00FEC366 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		BFD16048165F290C00FEC366 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		BFD1604D165F2A6100FEC366 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
+		BFD1604E165F2A6100FEC366 /* player@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player@2x.png"; sourceTree = "<group>"; };
+		BFD16055165F4C0300FEC366 /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Block.h; sourceTree = "<group>"; };
+		BFD16056165F4C0300FEC366 /* Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Block.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -477,6 +487,10 @@
 				BFD16020165F193800FEC366 /* GameLayer.m */,
 				BFD16022165F19F000FEC366 /* BackgroundLayer.h */,
 				BFD16023165F19F000FEC366 /* BackgroundLayer.m */,
+				BFD16047165F290C00FEC366 /* Player.h */,
+				BFD16048165F290C00FEC366 /* Player.m */,
+				BFD16055165F4C0300FEC366 /* Block.h */,
+				BFD16056165F4C0300FEC366 /* Block.m */,
 				BFD16017165F192000FEC366 /* IntroLayer.h */,
 				BFD16018165F192000FEC366 /* IntroLayer.m */,
 				BFD15E9A165F191D00FEC366 /* Resources */,
@@ -853,6 +867,8 @@
 		BFD16032165F1FC700FEC366 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				BFD1604D165F2A6100FEC366 /* player.png */,
+				BFD1604E165F2A6100FEC366 /* player@2x.png */,
 				BFD16033165F1FC700FEC366 /* backgournd@2x.png */,
 				BFD16034165F1FC700FEC366 /* background.png */,
 				BFD16035165F1FC700FEC366 /* down.png */,
@@ -932,6 +948,8 @@
 				BFD1603C165F1FC700FEC366 /* down@2x.png in Resources */,
 				BFD1603D165F1FC700FEC366 /* top.png in Resources */,
 				BFD1603E165F1FC700FEC366 /* top@2x.png in Resources */,
+				BFD1604F165F2A6100FEC366 /* player.png in Resources */,
+				BFD16050165F2A6100FEC366 /* player@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1047,6 +1065,8 @@
 				BFD16019165F192000FEC366 /* IntroLayer.m in Sources */,
 				BFD16021165F193800FEC366 /* GameLayer.m in Sources */,
 				BFD16024165F19F000FEC366 /* BackgroundLayer.m in Sources */,
+				BFD16049165F290C00FEC366 /* Player.m in Sources */,
+				BFD16057165F4C0300FEC366 /* Block.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1152,6 +1172,7 @@
 				BFD1601E165F192000FEC366 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
