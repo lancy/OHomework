@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF044730165F96DE0067C067 /* AVMicInput.m in Sources */ = {isa = PBXBuildFile; fileRef = BF04472F165F96DE0067C067 /* AVMicInput.m */; };
 		BFD15E88165F191D00FEC366 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD15E87165F191D00FEC366 /* QuartzCore.framework */; };
 		BFD15E8A165F191D00FEC366 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD15E89165F191D00FEC366 /* OpenGLES.framework */; };
 		BFD15E8C165F191D00FEC366 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD15E8B165F191D00FEC366 /* OpenAL.framework */; };
@@ -134,7 +135,6 @@
 		BFD16019165F192000FEC366 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD16018165F192000FEC366 /* IntroLayer.m */; };
 		BFD16021165F193800FEC366 /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD16020165F193800FEC366 /* GameLayer.m */; };
 		BFD16024165F19F000FEC366 /* BackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD16023165F19F000FEC366 /* BackgroundLayer.m */; };
-		BFD16039165F1FC700FEC366 /* backgournd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD16033165F1FC700FEC366 /* backgournd@2x.png */; };
 		BFD1603A165F1FC700FEC366 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD16034165F1FC700FEC366 /* background.png */; };
 		BFD1603B165F1FC700FEC366 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD16035165F1FC700FEC366 /* down.png */; };
 		BFD1603C165F1FC700FEC366 /* down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD16036165F1FC700FEC366 /* down@2x.png */; };
@@ -144,9 +144,19 @@
 		BFD1604F165F2A6100FEC366 /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD1604D165F2A6100FEC366 /* player.png */; };
 		BFD16050165F2A6100FEC366 /* player@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD1604E165F2A6100FEC366 /* player@2x.png */; };
 		BFD16057165F4C0300FEC366 /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD16056165F4C0300FEC366 /* Block.m */; };
+		BFD1605E165F5C7600FEC366 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD1605D165F5C7500FEC366 /* background@2x.png */; };
+		BFD16065165F5DDE00FEC366 /* circle1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD1605F165F5DDC00FEC366 /* circle1@2x.png */; };
+		BFD16066165F5DDE00FEC366 /* circle1.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD16060165F5DDC00FEC366 /* circle1.png */; };
+		BFD16067165F5DDE00FEC366 /* circle2.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD16061165F5DDD00FEC366 /* circle2.png */; };
+		BFD16068165F5DDE00FEC366 /* circle2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD16062165F5DDD00FEC366 /* circle2@2x.png */; };
+		BFD1606D165F5E1900FEC366 /* circle0.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD1606B165F5E1300FEC366 /* circle0.png */; };
+		BFD1606E165F5E1900FEC366 /* circle0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD1606C165F5E1500FEC366 /* circle0@2x.png */; };
+		BFD16071165F630B00FEC366 /* CCAnimation+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD16070165F630900FEC366 /* CCAnimation+Helper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF04472E165F96DE0067C067 /* AVMicInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVMicInput.h; sourceTree = "<group>"; };
+		BF04472F165F96DE0067C067 /* AVMicInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVMicInput.m; sourceTree = "<group>"; };
 		BFD15E83165F191D00FEC366 /* OHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD15E87165F191D00FEC366 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BFD15E89165F191D00FEC366 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -411,7 +421,6 @@
 		BFD16020165F193800FEC366 /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
 		BFD16022165F19F000FEC366 /* BackgroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundLayer.h; sourceTree = "<group>"; };
 		BFD16023165F19F000FEC366 /* BackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundLayer.m; sourceTree = "<group>"; };
-		BFD16033165F1FC700FEC366 /* backgournd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backgournd@2x.png"; sourceTree = "<group>"; };
 		BFD16034165F1FC700FEC366 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		BFD16035165F1FC700FEC366 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
 		BFD16036165F1FC700FEC366 /* down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down@2x.png"; sourceTree = "<group>"; };
@@ -423,6 +432,15 @@
 		BFD1604E165F2A6100FEC366 /* player@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player@2x.png"; sourceTree = "<group>"; };
 		BFD16055165F4C0300FEC366 /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Block.h; sourceTree = "<group>"; };
 		BFD16056165F4C0300FEC366 /* Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Block.m; sourceTree = "<group>"; };
+		BFD1605D165F5C7500FEC366 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		BFD1605F165F5DDC00FEC366 /* circle1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle1@2x.png"; sourceTree = "<group>"; };
+		BFD16060165F5DDC00FEC366 /* circle1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle1.png; sourceTree = "<group>"; };
+		BFD16061165F5DDD00FEC366 /* circle2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle2.png; sourceTree = "<group>"; };
+		BFD16062165F5DDD00FEC366 /* circle2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle2@2x.png"; sourceTree = "<group>"; };
+		BFD1606B165F5E1300FEC366 /* circle0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle0.png; sourceTree = "<group>"; };
+		BFD1606C165F5E1500FEC366 /* circle0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle0@2x.png"; sourceTree = "<group>"; };
+		BFD1606F165F630700FEC366 /* CCAnimation+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCAnimation+Helper.h"; sourceTree = "<group>"; };
+		BFD16070165F630900FEC366 /* CCAnimation+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCAnimation+Helper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -483,6 +501,8 @@
 			children = (
 				BFD16011165F192000FEC366 /* AppDelegate.h */,
 				BFD16012165F192000FEC366 /* AppDelegate.m */,
+				BF04472E165F96DE0067C067 /* AVMicInput.h */,
+				BF04472F165F96DE0067C067 /* AVMicInput.m */,
 				BFD1601F165F193800FEC366 /* GameLayer.h */,
 				BFD16020165F193800FEC366 /* GameLayer.m */,
 				BFD16022165F19F000FEC366 /* BackgroundLayer.h */,
@@ -491,6 +511,8 @@
 				BFD16048165F290C00FEC366 /* Player.m */,
 				BFD16055165F4C0300FEC366 /* Block.h */,
 				BFD16056165F4C0300FEC366 /* Block.m */,
+				BFD1606F165F630700FEC366 /* CCAnimation+Helper.h */,
+				BFD16070165F630900FEC366 /* CCAnimation+Helper.m */,
 				BFD16017165F192000FEC366 /* IntroLayer.h */,
 				BFD16018165F192000FEC366 /* IntroLayer.m */,
 				BFD15E9A165F191D00FEC366 /* Resources */,
@@ -867,9 +889,15 @@
 		BFD16032165F1FC700FEC366 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				BFD1606B165F5E1300FEC366 /* circle0.png */,
+				BFD1606C165F5E1500FEC366 /* circle0@2x.png */,
+				BFD1605F165F5DDC00FEC366 /* circle1@2x.png */,
+				BFD16060165F5DDC00FEC366 /* circle1.png */,
+				BFD16061165F5DDD00FEC366 /* circle2.png */,
+				BFD16062165F5DDD00FEC366 /* circle2@2x.png */,
 				BFD1604D165F2A6100FEC366 /* player.png */,
+				BFD1605D165F5C7500FEC366 /* background@2x.png */,
 				BFD1604E165F2A6100FEC366 /* player@2x.png */,
-				BFD16033165F1FC700FEC366 /* backgournd@2x.png */,
 				BFD16034165F1FC700FEC366 /* background.png */,
 				BFD16035165F1FC700FEC366 /* down.png */,
 				BFD16036165F1FC700FEC366 /* down@2x.png */,
@@ -942,7 +970,6 @@
 				BFD15EB0165F191D00FEC366 /* Icon@2x.png in Resources */,
 				BFD15EB3165F191D00FEC366 /* iTunesArtwork in Resources */,
 				BFD15FF1165F192000FEC366 /* ChangeLog in Resources */,
-				BFD16039165F1FC700FEC366 /* backgournd@2x.png in Resources */,
 				BFD1603A165F1FC700FEC366 /* background.png in Resources */,
 				BFD1603B165F1FC700FEC366 /* down.png in Resources */,
 				BFD1603C165F1FC700FEC366 /* down@2x.png in Resources */,
@@ -950,6 +977,13 @@
 				BFD1603E165F1FC700FEC366 /* top@2x.png in Resources */,
 				BFD1604F165F2A6100FEC366 /* player.png in Resources */,
 				BFD16050165F2A6100FEC366 /* player@2x.png in Resources */,
+				BFD1605E165F5C7600FEC366 /* background@2x.png in Resources */,
+				BFD16065165F5DDE00FEC366 /* circle1@2x.png in Resources */,
+				BFD16066165F5DDE00FEC366 /* circle1.png in Resources */,
+				BFD16067165F5DDE00FEC366 /* circle2.png in Resources */,
+				BFD16068165F5DDE00FEC366 /* circle2@2x.png in Resources */,
+				BFD1606D165F5E1900FEC366 /* circle0.png in Resources */,
+				BFD1606E165F5E1900FEC366 /* circle0@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1067,6 +1101,8 @@
 				BFD16024165F19F000FEC366 /* BackgroundLayer.m in Sources */,
 				BFD16049165F290C00FEC366 /* Player.m in Sources */,
 				BFD16057165F4C0300FEC366 /* Block.m in Sources */,
+				BFD16071165F630B00FEC366 /* CCAnimation+Helper.m in Sources */,
+				BF044730165F96DE0067C067 /* AVMicInput.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1088,7 +1124,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1107,7 +1143,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1124,6 +1160,7 @@
 				GCC_PREFIX_HEADER = OHomework/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"OHomework/libs/kazmath/include\"";
 				INFOPLIST_FILE = OHomework/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
@@ -1143,6 +1180,7 @@
 				GCC_PREFIX_HEADER = OHomework/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"OHomework/libs/kazmath/include\"";
 				INFOPLIST_FILE = OHomework/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",

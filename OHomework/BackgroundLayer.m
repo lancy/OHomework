@@ -72,7 +72,7 @@
     if (position.x == -(screenSize.width / 2)) {
         position.x = screenSize.width * 3 / 2;
     }
-    position.x -= 1;
+    position.x -= 2;
     sprite.position = position;
 }
 

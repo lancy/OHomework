@@ -14,7 +14,8 @@
 - (id)init
 {
     if((self=[super init])) {
-        self = [CCSprite spriteWithFile:@"player.png"];
+        NSInteger index = round(CCRANDOM_0_1() * 2);
+        self = [CCSprite spriteWithFile:[NSString stringWithFormat:@"circle%d.png", index]];
 	}
 	return self;
 }

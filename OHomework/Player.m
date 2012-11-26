@@ -7,6 +7,8 @@
 //
 
 #import "Player.h"
+#import "CCAnimation+Helper.h"
+
 
 
 @implementation Player
@@ -14,13 +16,11 @@
 - (id)init
 {
     if((self=[super init])) {
-        self = [CCSprite spriteWithFile:@"player.png"];
-        CGSize winSize = [[CCDirector sharedDirector] winSize];
-        self.position = CGPointMake(50, winSize.height - 100);
-        
+        self = [CCSprite spriteWithFile:@"player.png"];        
 	}
 	return self;
 }
+
 
 
 @end

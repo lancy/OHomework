@@ -15,5 +15,4 @@
 @interface Player : CCSprite {
 }
 
-
 @end
