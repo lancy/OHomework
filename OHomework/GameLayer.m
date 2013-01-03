@@ -68,10 +68,13 @@
         
         // init label
         CCLabelTTF *label = [CCLabelTTF labelWithString:@"Score: 0" fontName:@"Marker Felt" fontSize:32];
+        [label setColor:ccBLACK];
         [self addChild:label z:1 tag:SCORE_LABEL_TAG];
         
         CCLabelTTF *highLabel = [CCLabelTTF labelWithString:@"High Score: 0" fontName:@"Marker Felt" fontSize:32];
+        [label setColor:ccBLACK];
         [self addChild:highLabel z:1 tag:HIGH_LABEL_TAG];
+        
         
         
         self.micInput = [[AVMicInput alloc] init];
@@ -132,7 +135,7 @@
 {
     for (Block *block in self.blockArray) {
         float distance = ccpDistance(self.player.position, block.position);
-        if (distance < 50) {
+        if (distance < 30) {
             [self gameOver];
         }
     }
@@ -157,16 +160,18 @@
 {
     CGSize winSize = [[CCDirector sharedDirector] winSize];
     CGPoint position = self.player.position;
+    NSInteger pencilHeight = 15;
+    
     if ([self isFalling]) {
         self.speed -= 0.05;
-        if (position.y < 25) {
+        if (position.y < 25 + pencilHeight) {
             self.speed = 0;
             [self gameOver];
         }
 
     } else {
         self.speed += 0.05;
-        if (position.y > winSize.height - 25) {
+        if (position.y > winSize.height - (25 + pencilHeight)) {
             self.speed = 0;
             [self gameOver];
         }
@@ -212,7 +217,7 @@
 
 - (void)startAnimation
 {
-    CCAnimation *animation = [CCAnimation animationWithFile:@"circle" frameCount:3 delay:0.25];
+    CCAnimation *animation = [CCAnimation animationWithFile:@"people_" frameCount:2 delay:0.05];
     CCAnimate *animate = [CCAnimate actionWithAnimation:animation];
     CCRepeatForever *repeat = [CCRepeatForever actionWithAction:animate];
     [self.player runAction:repeat];
@@ -249,6 +254,7 @@
 {
     CGSize winSize = [[CCDirector sharedDirector] winSize];
     CCLabelTTF *label = (CCLabelTTF *)[self getChildByTag:SCORE_LABEL_TAG];
+    [label setColor:ccBLACK];
     
     if (self.score == 0) {
         label.position = ccp(winSize.width, winSize.height);
@@ -266,6 +272,7 @@
 {
     CGSize winSize = [[CCDirector sharedDirector] winSize];
     CCLabelTTF *label = (CCLabelTTF *)[self getChildByTag:HIGH_LABEL_TAG];
+    [label setColor:ccBLACK];
     
     if (self.score == 0) {
         label.position = ccp(0, winSize.height);

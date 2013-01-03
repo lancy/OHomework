@@ -53,9 +53,17 @@
 
 	// add the label as a child to this Layer
 	[self addChild: background];
+    
+    CCMenuItem *starMenuItem = [CCMenuItemImage itemWithNormalImage:@"btn_start.png" selectedImage:@"btn_start.png" target:self selector:@selector(makeTransition:)];
+                                
+    starMenuItem.position = ccp(230, 130);
+    CCMenu *starMenu = [CCMenu menuWithItems:starMenuItem, nil];
+    starMenu.position = CGPointZero;
+    [self addChild:starMenu];
+
 	
-	// In one second transition to the new scene
-	[self scheduleOnce:@selector(makeTransition:) delay:1];
+//	// In one second transition to the new scene
+//	[self scheduleOnce:@selector(makeTransition:) delay:1];
 }
 
 -(void) makeTransition:(ccTime)dt

@@ -30,21 +30,21 @@
         [self addChild:backgournd z:0];
         
         // top
-        _top0= [CCSprite spriteWithFile:@"top.png"];
+        _top0= [CCSprite spriteWithFile:@"pencil_up.png"];
         _top0.position = CGPointMake(screenSize.width / 2, screenSize.height / 2);
         [self addChild:_top0 z:1];
 
-        _top1= [CCSprite spriteWithFile:@"top.png"];
+        _top1= [CCSprite spriteWithFile:@"pencil_up.png"];
         _top1.position = CGPointMake(screenSize.width * 3 / 2, screenSize.height / 2);
         [self addChild:_top1 z:1];
         
 
         // top
-        _down0= [CCSprite spriteWithFile:@"down.png"];
+        _down0= [CCSprite spriteWithFile:@"pencil_down.png"];
         _down0.position = CGPointMake(screenSize.width / 2, screenSize.height / 2);
         [self addChild:_down0 z:1];
         
-        _down1= [CCSprite spriteWithFile:@"down.png"];
+        _down1= [CCSprite spriteWithFile:@"pencil_down.png"];
         _down1.position = CGPointMake(screenSize.width * 3 / 2, screenSize.height / 2);
         [self addChild:_down1 z:1];
 

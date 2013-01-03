@@ -16,7 +16,7 @@
 - (id)init
 {
     if((self=[super init])) {
-        self = [CCSprite spriteWithFile:@"player.png"];        
+        self = [CCSprite spriteWithFile:@"people_0.png"];        
 	}
 	return self;
 }
